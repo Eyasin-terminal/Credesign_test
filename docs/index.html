@@ -1,304 +1,243 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nino - Personal Portfolio HTML Template Documentation</title>
+    <meta charset="utf-8">
+    <title>nino - Personal Portfolio HTML Template</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <style type="text/css" media="screen">
+    p,
+    table,
+    hr,
+    .box {
+        margin-bottom: 25px;
+    }
 
-    <link rel="stylesheet" href="assets/blueprint-css/screen.css">
-    <link rel="stylesheet" href="assets/blueprint-css/print.css" media="print">
-    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css">
-    <link rel="stylesheet" href="syntax-highlighter/styles/shCore.css">
-    <link rel="stylesheet" href="syntax-highlighter/styles/shThemeDefault.css">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        p, table, hr, .box {
-            margin-bottom: 25px;
-        }
-
-        pre {
-            padding: 16px;
-            background: #f4f4f4;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow-x: auto;
-            white-space: pre;
-            font-size: 14px;
-        }
-
-        code {
-            font-family: Consolas, monospace;
-        }
-
-        h3 {
-            margin-top: 30px;
-        }
+    .box p {
+        margin-bottom: 10px;
+    }
     </style>
+    <!-- Syntax Highlighter -->
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
 </head>
 
 <body>
-<div class="container">
-
-    <h3 class="center alt">
-        "nino - Personal Portfolio HTML Template"
-        Documentation by "Theme_master" v 1.0
-    </h3>
-
-    <hr>
-
-    <h1 class="center">nino - Personal Portfolio HTML Template</h1>
-
-    <div class="borderTop">
-        <p>
-            <strong>Created:</strong> 2024<br>
-            <strong>By:</strong> Theme_master
-        </p>
-
-        <p>
-            Thank you for purchasing <strong>nino</strong>.
-            If you have any questions about this template, please contact
-            the author through the support center.
-        </p>
-    </div>
-
-    <hr>
-
-    <h2 id="toc">Table of Contents</h2>
-
-    <ol>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#htmlStructure">HTML Structure</a></li>
-        <li><a href="#cssFiles">CSS Files and Structure</a></li>
-        <li><a href="#javascript">JavaScript</a></li>
-        <li><a href="#fontssused">Fonts Used</a></li>
-        <li><a href="#credits">Sources and Credits</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#edit">How to Edit the Template</a></li>
-    </ol>
-
-    <hr>
-
-    <h3 id="introduction">A) Introduction - <a href="#toc">top</a></h3>
-
-    <p>
-        Thank you for purchasing <strong>nino - Personal Portfolio HTML Template</strong>.
-        This documentation explains the structure, files, and customization
-        options available in the template.
-    </p>
-
-    <div class="section">
-        <p><strong>Template Name:</strong> nino - Personal Portfolio HTML Template</p>
-        <p><strong>Author Name:</strong> Tanvir Hossain</p>
-        <p><strong>Author Username:</strong> Theme_master</p>
-        <p><strong>Author URL:</strong>
-            <a href="https://themeforest.net/user/Theme_master">ThemeForest Profile</a>
-        </p>
-        <p><strong>Author Email:</strong> hridoywebdev@gmail.com</p>
-    </div>
-
-    <h4>Template Features</h4>
-
-    <ul>
-        <li>Bootstrap</li>
-        <li>Clean and professional design</li>
-        <li>Responsive layout</li>
-        <li>SEO-friendly structure</li>
-        <li>Google Fonts</li>
-        <li>jQuery and JavaScript functionality</li>
-        <li>HTML5 and CSS3</li>
-        <li>Well-documented source code</li>
-    </ul>
-
-    <hr>
-
-    <h3 id="htmlStructure">B) HTML Structure - <a href="#toc">top</a></h3>
-
-    <h4>HTML Files</h4>
-
-    <ul>
-        <li><em>index.html</em> - Home page</li>
-    </ul>
-
-    <h4>General HTML Structure</h4>
-
-    <p>The following example illustrates a basic page layout.</p>
-
-    <pre><code>&lt;!-- Page Layout --&gt;
+    <div class="container">
+        <h3 class="center alt">&ldquo;nino - Personal Portfolio HTML Template &rdquo; Documentation by &ldquo;Theme_master&rdquo;
+            v 1.0</h3>
+        <hr>
+        <h1 class="center">nino - Personal Portfolio HTML Template</h1>
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+                        Created: 2024<br>
+                        By: Theme_master<br>
+                    </strong>
+                </p>
+            </div><!-- end div .span-6 -->
+            <div class="span-12 last">
+                <p class="prepend-top append-0">Thank you for purchasing <strong>nino</strong>. If you have any questions that are beyond the scope of this help file, please feel free contact via support center </p>
+            </div>
+        </div><!-- end div .borderTop -->
+        <hr>
+        <h2 id="toc" class="alt">Table of Contents</h2>
+        <ol class="alpha">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#htmlStructure">HTML Structure</a></li>
+            <li><a href="#cssFiles">CSS Files and Structure</a></li>
+            <li><a href="#javascript">JavaScripts</a></li>
+            <li><a href="#fontssused">Fonts used</a></li>
+            <li><a href="#credits">Sources and Credits</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#edit">How to Edit The template</a></li>
+        </ol>
+        <hr>
+        <h3 id="introduction"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+        <p>Thank you so much for purchasing <strong>nino - Personal Portfolio HTML Template</strong>. Please feel free to contact us if you have question or problem about this template. We will do our best to provide you with the best possible assistance.</p>
+        <div class="section" id="intro">
+            <p><strong>Template Name:</strong>nino - Personal Portfolio HTML Template</p>
+            <p><strong>Author Name: </strong>Tanvir Hossain</p>
+            <p><strong>Author UserName:</strong>Theme_master</p>
+            <p><strong>Author URL:</strong>https://themeforest.net/user/Theme_master</p>
+            <p><strong>Author Email:</strong>hridoywebdev@gmail.com</p>
+            <p><strong>Author Skype:</strong>arfanhridoy</p>
+        </div>
+        <h4>Template Features</h4>
+        <ul>
+            <li>Bootstrap</li>
+            <li>Clean and Professional Design</li>
+            <li>Cross Browser Compatible</li>
+            <li>Fully Responsive</li>
+            <li>SEO Friendly</li>
+            <li>Clean Code</li>
+            <li>Google web fonts </li>
+            <li>JavaScript with jQuery Library</li>
+            <li>Valid HTML5 &amp; CSS3</li>
+            <li>Well Documented</li>
+            <li>24/7 Support</li>
+        </ul>
+        <hr>
+        <h3 id="htmlStructure"><strong>B) HTML Structure</strong> - <a href="#toc">top</a></h3>
+        <h4>HTML Files</h4>
+        <ul>
+            <li><em>index.html</em> - Home Page </li>
+            </ul>
+            <h4>General HTML structure</h4>
+            <p>This template structure based on Bootstrap 5.0.1 Here is the sample structure.</p>
+            <pre class="brush: html">
+&lt;!-- Page Layout
+================================================== --&gt;
 
 &lt;!-- Header start --&gt;
 &lt;header id="home"&gt;
     &lt;div class="container"&gt;
         &lt;div class="row"&gt;
             &lt;div class="col-lg-12 col-sm-12"&gt;
-                &lt;h1&gt;My Portfolio&lt;/h1&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/header&gt;
-&lt;!-- Header end --&gt;</code></pre>
+&lt;!-- Header end --&gt;
 
-    <hr>
+</pre>
+            <hr>
+            <h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+            <h4>Styles</h4>
+            <pre class="brush: html">
+ &lt;!-- CSS
+  ================================================== --&gt;
+        &lt;!-- ALL GOOGLE FONTS --&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;
+    &lt;!-- BOOTSTRAP CSS --&gt;
+    &lt;link rel="stylesheet" href="assets/css/bootstrap.min.css" /&gt;
+    &lt;!-- FONT AWESOME CSS --&gt;
+    &lt;link rel="stylesheet" href="assets/css/fontawesome.min.css" /&gt;
+    &lt;!-- MAGNIFIC POPUP CSS --&gt;
+    &lt;link rel="stylesheet" href="assets/css/magnific-popup.min.css" /&gt;
+    &lt;!-- NICE SELECT CSS --&gt;
+    &lt;link rel="stylesheet" href="assets/css/nice-select.min.css" /&gt;
+    &lt;!-- ANIMATE CSS --&gt;
+    &lt;link rel="stylesheet" href="assets/css/animate.min.css" /&gt;
+    &lt;!-- SLICK CSS --&gt;
+    &lt;link rel="stylesheet" href="assets/css/slick.min.css" /&gt;
+    &lt;!-- SPACING CSS --&gt;
+    &lt;link rel="stylesheet" href="assets/css/spacing.css" /&gt;
+    &lt;!-- MAIN STYLE CSS --&gt;
+    &lt;link rel="stylesheet" href="assets/css/style.css" /&gt;
+    &lt;!-- RESPONSIVE CSS --&gt;
+    &lt;link rel="stylesheet" href="assets/css/responsive.css"&gt;
 
-    <h3 id="cssFiles">C) CSS Files and Structure - <a href="#toc">top</a></h3>
+</pre>
+            <p>All css files are separates for improving convenience to edit this template.</p>
+            <p>Some of stylesheets contain <em>Table of content</em> for easy navigation, for instance <strong>style.css</strong>:</p>
+            <pre class="brush: css">
 
-    <h4>Stylesheets</h4>
 
-    <p>The template uses separate stylesheets for easier customization.</p>
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.COMMON CSS STYLE
+* 03.MENU CSS STYLE
+* 04.HEADER CSS STYLE
+* 05.ABOUT CSS STYLE
+* 06.SERVICE CSS STYLE
+* 07.SKILL CSS STYLE
+* 08.RESUME CSS STYLE
+* 09.PORTFOLIO CSS STYLE
+* 10.TESTIMONIALS CSS STYLE
+* 11.PRICING CSS STYLE
+* 12.CLIENTS CSS STYLE
+* 13.CONTACT CSS STYLE
+* 14.FOOTER CSS STYLE
+* 15.PRELOADER &amp; BOUNCE CCS STYLE
+* 16.BLOG CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+</pre>
+            <hr>
+            <h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+            <p>This theme imports Javascript files.</p>
+            <pre class="brush: html">
+&lt;!-- Javascript Files
+================================================== --&gt;
+    
+    &lt;!-- JQUERY JS --&gt;
+    &lt;script src="assets/js/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- BOOTSTRAP JS--&gt;
+    &lt;script src="assets/js/bootstrap.min.js"&gt;&lt;/script&gt;
+    &lt;!-- APPEAR JS --&gt;
+    &lt;script src="assets/js/appear.min.js"&gt;&lt;/script&gt;
+    &lt;!-- SLICK JS--&gt;
+    &lt;script src="assets/js/slick.min.js"&gt;&lt;/script&gt;
+    &lt;!-- NICE SELECT JS--&gt;
+    &lt;script src="assets/js/jquery.nice-select.min.js"&gt;&lt;/script&gt;
+    &lt;!-- IMAGE LOADER JS--&gt;
+    &lt;script src="assets/js/imagesloaded.pkgd.min.js"&gt;&lt;/script&gt;
+    &lt;!-- ISOTOPE JS--&gt;
+    &lt;script src="assets/js/isotope.pkgd.min.js"&gt;&lt;/script&gt;
+    &lt;!--  WOW ANIMATION JS--&gt;
+    &lt;script src="assets/js/wow.min.js"&gt;&lt;/script&gt;
+    &lt;!-- SCRIPT JS--&gt;
+    &lt;script src="assets/js/script.js"&gt;&lt;/script&gt;
+            
+</pre>
+            <hr>
+            <h3 id="fontssused"><strong>E) Fonts Used</strong> - <a href="#toc">top</a></h3>
+            <p>I have used Syne font in this template.</p>
+            <ol>
+                <li><a href="#">Syne</a> - Google Web Font</li>
+            </ol><br />
+            <hr>
+            <h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+            <ul>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>modernizr min</li>
+                <li>FontAwesome</li>
+                <li>Wow Animation</li>
+                <li>owlcarousel</li>
+            </ul>
+            <hr>
+            <h3 id="faq"><strong>G) FAQ</strong> - <a href="#toc">top</a></h3>
+            <p>1) This template main color is - #E8C83E. if you want to change this color. just replace it with your own color. you can change color from style.css file</p>
+            <p>2) If you want to change contact mail id, just open <strong>"contact.php"</strong> and you see the mail address. just change it with your own mail address.</p>
+            <hr>
+            <h3 id="edit"><strong>H) How to edit the template</strong> - <a href="#toc">top</a></h3>
+            <h3>Prerequisites</h3>
+            Basic understanding of HTML <br>
+            Text editor (e.g., Notepad, Visual Studio Code, sublime text) <br>
+            Web browser<br><br>
+            <hr>
+            1) Download The html files <br><br>
+            2) Open the html files using a code editor <br>
+            for example: notepad++, Sublime text<br><br>
+            3) Chnage the text by your own requrements <br><br>
+            4) Save the modified HTML file using your text editor. <br><br>
+            5) Upload the files to your hosting directory (public_html folder) <br><br>
+            6) Congratulations Your website is LIVE
+            
 
-    <pre><code>&lt;!-- Google Fonts --&gt;
-&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
-&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
-
-&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;
-
-&lt;!-- Bootstrap CSS --&gt;
-&lt;link rel="stylesheet" href="assets/css/bootstrap.min.css"&gt;
-
-&lt;!-- Font Awesome CSS --&gt;
-&lt;link rel="stylesheet" href="assets/css/fontawesome.min.css"&gt;
-
-&lt;!-- Animation CSS --&gt;
-&lt;link rel="stylesheet" href="assets/css/animate.min.css"&gt;
-
-&lt;!-- Main stylesheet --&gt;
-&lt;link rel="stylesheet" href="assets/css/style.css"&gt;
-
-&lt;!-- Responsive stylesheet --&gt;
-&lt;link rel="stylesheet" href="assets/css/responsive.css"&gt;</code></pre>
-
-    <p>Example of the table of contents inside style.css:</p>
-
-    <pre><code>/*
-* -----------------------------------------
-* 01. GLOBAL CSS STYLE
-* 02. COMMON CSS STYLE
-* 03. MENU CSS STYLE
-* 04. HEADER CSS STYLE
-* 05. ABOUT CSS STYLE
-* 06. SERVICE CSS STYLE
-* 07. SKILL CSS STYLE
-* 08. RESUME CSS STYLE
-* 09. PORTFOLIO CSS STYLE
-* 10. TESTIMONIALS CSS STYLE
-* 11. PRICING CSS STYLE
-* 12. CLIENTS CSS STYLE
-* 13. CONTACT CSS STYLE
-* 14. FOOTER CSS STYLE
-* 15. PRELOADER CSS STYLE
-* 16. BLOG CSS STYLE
-* -----------------------------------------
-*/</code></pre>
-
-    <hr>
-
-    <h3 id="javascript">D) JavaScript - <a href="#toc">top</a></h3>
-
-    <p>The template uses JavaScript libraries for interactive functionality.</p>
-
-    <pre><code>&lt;!-- jQuery --&gt;
-&lt;script src="assets/js/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
-
-&lt;!-- Bootstrap --&gt;
-&lt;script src="assets/js/bootstrap.min.js"&gt;&lt;/script&gt;
-
-&lt;!-- Appear --&gt;
-&lt;script src="assets/js/appear.min.js"&gt;&lt;/script&gt;
-
-&lt;!-- Slick --&gt;
-&lt;script src="assets/js/slick.min.js"&gt;&lt;/script&gt;
-
-&lt;!-- Isotope --&gt;
-&lt;script src="assets/js/isotope.pkgd.min.js"&gt;&lt;/script&gt;
-
-&lt;!-- WOW Animation --&gt;
-&lt;script src="assets/js/wow.min.js"&gt;&lt;/script&gt;
-
-&lt;!-- Main JavaScript --&gt;
-&lt;script src="assets/js/script.js"&gt;&lt;/script&gt;</code></pre>
-
-    <hr>
-
-    <h3 id="fontssused">E) Fonts Used - <a href="#toc">top</a></h3>
-
-    <p>The template uses the Syne font.</p>
-
-    <ol>
-        <li>
-            <a href="https://fonts.google.com/specimen/Syne">Syne</a>
-            - Google Web Font
-        </li>
-    </ol>
-
-    <hr>
-
-    <h3 id="credits">F) Sources and Credits - <a href="#toc">top</a></h3>
-
-    <ul>
-        <li>Bootstrap</li>
-        <li>jQuery</li>
-        <li>Font Awesome</li>
-        <li>WOW Animation</li>
-        <li>Google Fonts</li>
-        <li>Isotope</li>
-        <li>Slick</li>
-    </ul>
-
-    <hr>
-
-    <h3 id="faq">G) FAQ - <a href="#toc">top</a></h3>
-
-    <p>
-        <strong>1) How can I change the main color?</strong><br>
-        Open <strong>style.css</strong>, search for the existing color value
-        (for example, #E8C83E), and replace it with your preferred color.
-    </p>
-
-    <p>
-        <strong>2) How can I change the contact email?</strong><br>
-        If the template includes a contact.php file, open it and update
-        the email address used by the contact form.
-    </p>
-
-    <hr>
-
-    <h3 id="edit">H) How to Edit the Template - <a href="#toc">top</a></h3>
-
-    <h4>Prerequisites</h4>
-
-    <ul>
-        <li>Basic knowledge of HTML and CSS</li>
-        <li>A code editor such as Visual Studio Code</li>
-        <li>A web browser</li>
-    </ul>
-
-    <h4>Steps</h4>
-
-    <ol>
-        <li>Extract the downloaded template files.</li>
-        <li>Open the project folder in your code editor.</li>
-        <li>Open index.html to edit the home page.</li>
-        <li>Update text, images, links, and other content.</li>
-        <li>Modify CSS files to customize the design.</li>
-        <li>Save your changes and preview the page in a browser.</li>
-        <li>Upload the completed files to your web hosting directory.</li>
-    </ol>
-
-    <p>
-        Thank you for using this documentation.
-        Please consult the template author or support center if you need
-        further assistance.
-    </p>
-
-    <p><a href="#toc">Go to Table of Contents</a></p>
-
-    <hr>
-
-</div>
+                    <br><br>
+            <p>Once again, thank you so much for purchasing this template. I'd be glad to help you if you have any questions relating to this template. I'll do my best to assist.</p>
+            <p><a href="#toc">Go To Table of Contents</a></p>
+            <hr class="space">
+    </div><!-- end div .container -->
+    <script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript">
+    SyntaxHighlighter.all()
+    </script>
 </body>
+
 </html>
